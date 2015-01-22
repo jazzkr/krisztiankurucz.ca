@@ -1,0 +1,121 @@
+body {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	background-image: url('/assets/bg.png');
+	background-repeat: repeat;
+}
+
+@font-face {
+    font-family: 'coolvetica';
+    src: url('/fonts/coolvetica.ttf');
+}
+
+@media(max-width: 767px) {
+	.navbar-custom .navbar-nav > li > a {
+		line-height: .5em;
+	}
+	.navbar-custom .navbar-brand {
+  		line-height: .2em !important;
+  		font-size: 2em;
+	}
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+.container .jumbotron {
+  padding-top: 5px !important;
+}
+
+.navbarcontainer {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+	
+.homecog {
+  color: #999999;
+  font-size: 100px;
+  vertical-align: -25px;
+}
+
+.navicon {
+  color: #C64DFF;
+  vertical-align: -2px;
+}
+
+.firstletter {
+	color: #C64DFF !important;
+	font-size: 1.3em;
+}
+
+.footer {
+  color: #FFFFFF;
+  font-size: .8em;
+}
+
+.movpicker {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.movpicker td {  
+  padding: 5px 5px 5px 5px;
+}
+
+.movpicker .movselect {
+  padding-bottom: 10px;
+}
+
+.movTitle{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-custom {
+	background-color:#4D4D4D;
+    color:#ffffff;
+  	border-color: #4D4D4D;
+  	border-width: 5px;
+}
+  
+.navbar-custom .navbar-nav > li > a {
+  	color:#ffffff;
+  	padding-left: 5px;
+  	padding-right: 5px;
+  	line-height: 1.4em;
+  	font-size: 1.3em;
+  	border-radius: 3px;
+  	margin: 5px 5px 5px 5px;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+	background-color: #C4C4C4;
+  	margin: 5px 5px 5px 5px;
+}
+      
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #C4C4C4;
+  	margin: 5px 5px 5px 5px;
+}
+      
+.navbar-custom .navbar-brand {
+  	color:#eeeeee;
+  	font-family: coolvetica;
+  	font-size: 2.2em;
+  	line-height: .6em;
+}
+
+.navbar-custom .navbar-toggle {
+  	background-color:#eeeeee;
+}
+
+.navbar-custom .icon-bar {
+  	background-color:#C64DFF;
+  	max-width: 1em !important;
+}
