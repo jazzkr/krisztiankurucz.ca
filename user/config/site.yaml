@@ -1,0 +1,16 @@
+title: 'Krisztian Kurucz'
+author:
+  name: 'Krisztian Kurucz'
+  email: admin@krisztiankurucz.ca
+taxonomies:
+  - category
+  - tag
+metadata:
+  description: 'Krisztian Kurucz. UWaterloo Mechatronics Engineering Class of 2018.'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog

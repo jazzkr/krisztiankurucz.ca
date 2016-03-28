@@ -1,0 +1,3 @@
+enabled: true        # global enable/disable the entire plugin
+gsn: ''              # GoSquared Tracking Code
+gsInAdmin: false     # GoSquared can track admin users - off by default
