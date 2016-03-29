@@ -1,0 +1,15 @@
+{% set heading = "Error" %}
+{% set subheading = "Test" %}
+{% set image = "home-bg.jpg" %}
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+	<div id="error">
+		<div>
+			<h1>Error {{ page.header.http_response_code }}</h1>
+			<p>
+				{{ page.content }}
+			</p>
+		</div>
+	</div>
+{% endblock %}

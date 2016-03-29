@@ -15,8 +15,8 @@ Hi, you've reached my website. I'm Krisztian Kurucz. Here are some quick facts a
 * I passionately pursue various side projects in my spare time.
 * I'm originally born in Budapest, Hungary, but now live in Toronto, Ontario.
 
-### Future plans
+### Future Updates
 
-I'm still actively developing this website, so stay tuned for more!
+I'm actively working on this site so stay tuned for updates.
 
 ---

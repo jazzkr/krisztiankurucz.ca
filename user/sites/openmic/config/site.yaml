@@ -1,0 +1,21 @@
+title: Richmond Hill Acoustic Open Mic
+
+author:
+  name: Steffie Goodfield
+  email: 'steffie@goodfield.com'
+  footer: Support Local Artists
+metadata:
+    description: 'Metadata here!'
+
+# Main Menu
+menu:
+
+social: 
+  - icon: socicon-mail 
+    link: "mailto:steffie@goodfield.com" 
+  - icon: socicon-twitter
+    link: "http://twitter.com" 
+  - icon: socicon-facebook
+    link: "http://facebook.com" 
+  - icon: socicon-instagram
+    link: "http://instagram.com"

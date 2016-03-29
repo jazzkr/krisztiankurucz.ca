@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    {% block head %}
+        <meta charset="utf-8" />
+        <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
+        {% include 'partials/metadata.html.twig' %}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/png" href="{{ url('theme://img/favicon.png') }}" />   
+        <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+    
+
+        {% block javascripts %}
+            {% do assets.add('jquery',101) %}
+            {% do assets.addJs('theme://js/kube.min.js') %}
+        {% endblock %}
+        {{ assets.js() }}
+        {% block stylesheets %}
+            {% do assets.addCss('theme://css/custom.min.css') %}
+            {% do assets.addCss('theme://css/kube.min.css') %}
+            {% do assets.addCss('theme://css/font-awesome.min.css') %}
+            
+        {% endblock %}
+        {{ assets.css() }}
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+        {% endblock head%}
+    </head>
+    <body>
+
+        <div class="main-nav">
+            <div class="container">
+                <header class="group top-nav">
+                    <nav class="navbar logo-w navbar-left" >
+                        <a class="logo" href="{{ base_url_absolute }}">{{ site.title }}</a>
+                    </nav>
+                </header>
+            </div>
+                <div class="container">
+                    <header class="group top-nav">
+                        <div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+                            <span class="logo">{{ site.title }}</span>
+                        </div>
+                        {% include 'partials/navigation.html.twig' %}
+                    </header>
+                </div>
+            </div>
+        <div class="intro">
+        </div>
+
+        {% block body %}
+            <div class="content">
+                <div class="container">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+        {% endblock %}
+
+        <footer>
+            <div class="container">
+                <div class="units-row">
+                    <div class="unit-50">
+                        <p class="text-centered foot-cp">
+                            <a href="https://krisztiankurucz.ca">Coded with <i class="fa fa-heart"></i> by Krisztian K.</a>
+                        </p>
+                    </div>
+                    <div class="unit-50">
+                        <ul class="social list-flat right">
+                        {% for item in site.social %}
+                            <li><a href="{{ item.link }}"><i class="fa {{ item.icon }}"></i></a></li>
+                        {% endfor %}
+                            <li><script>window.twttr=function(t,e,r){var n,i=t.getElementsByTagName(e)[0],w=window.twttr||{};return t.getElementById(r)?w:(n=t.createElement(e),n.id=r,n.src="https://platform.twitter.com/widgets.js",i.parentNode.insertBefore(n,i),w._e=[],w.ready=function(t){w._e.push(t)},w)}(document,"script","twitter-wjs")</script><a href="https://www.periscope.tv/taykochan" class="periscope-on-air" data-size="large">@taykochan</a></li>
+                        </ul>
+                    </div>
+                    <p class="text-centered foot-cp">
+                        <a href="#">{{ site.author.footer }}</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
