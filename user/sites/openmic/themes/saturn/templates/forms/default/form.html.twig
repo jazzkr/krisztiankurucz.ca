@@ -1,7 +1,7 @@
 <div class="alert">{{ form.message }}</div>
 
 <form name="{{ form.name }}"
-      action="{{ uri.rootUrl ~ (form.action|default(page.route)) }}"
+      action="/openmic/contact"
       method="{{ form.method|upper|default('POST') }}" class="forms">
 {% for field in form.fields %}
     {% set value = form.value(field.name) %}
@@ -12,9 +12,9 @@
     <br />
 	<div class="buttons">
 	{% for button in form.buttons %}
-	    <button class=" btn btn-big" type="{{ button.type|default('submit') }}">{{ button.value|default('Submit') }}</button>
+	    <button class="btn" type="{{ button.type|default('submit') }}">{{ button.value|default('Submit') }}</button>
 	{% endfor %}
 	</div>
 
-  {{ nonce_field('form', 'form-nonce') }}	
+  {{ nonce_field('form', 'form-nonce') }}
 </form>

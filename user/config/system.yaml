@@ -62,7 +62,6 @@ pages:
     - .idea
   ignore_hidden: true
   url_taxonomy_filters: true
-  markdown_extra: false
 cache:
   enabled: true
   check:
@@ -96,7 +95,6 @@ debugger:
   enabled: false
   shutdown:
     close_connection: true
-  twig: true
 images:
   default_image_quality: 85
   cache_all: false
