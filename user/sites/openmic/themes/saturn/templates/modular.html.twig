@@ -1,0 +1,12 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+<article class="box post post-excerpt">
+    <h2>{{ page.header.title }}</h2>
+    {{ page.content }}
+    {% for module in page.collection() %}
+        <div id="{{ _self.pageLinkName(module.menu) }}"></div>
+        {{ module.content }}
+    {% endfor %}
+</article>
+{% endblock %}

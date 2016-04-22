@@ -62,4 +62,4 @@ form:
         - display: thankyou
 ---
 
-Are you a musician looking to jam? A venue looking for some talented local artists? A local trying to find the best nightlife in York Region? Feel free to drop me a line!
+Are you a musician looking to jam? A venue looking for some talented local artists? A local trying to find the best nightlife in York Region? Feel free to drop us a line!

@@ -1,0 +1,19 @@
+<form name="{{ form.name }}"
+      class="{{ form.name }}"
+      action="/contactme"
+      method="{{ form.method|upper|default('POST') }}">
+{% for field in form.fields %}
+    {% set value = form.value(field.name) %}
+    <div>
+        {% include "forms/fields/#{field.type}/#{field.type}.html.twig" %}
+    </div>
+{% endfor %}
+    <br />
+	<div class="buttons">
+	{% for button in form.buttons %}
+	    <button class="btn" type="{{ button.type|default('submit') }}">{{ button.value|default('Submit') }}</button>
+	{% endfor %}
+	</div>
+
+  {{ nonce_field('form', 'form-nonce') }}
+</form>

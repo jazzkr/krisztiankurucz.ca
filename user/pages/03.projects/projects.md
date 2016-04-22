@@ -3,8 +3,14 @@ title: Projects
 heading: Projects
 subheading: 'This is what I do.'
 image: projects-bg.jpg
----
 
+content:
+    items: @self.children
+    order:
+        by: default
+        dir: asc
+    limit: 20
+    pagination: false
 ---
 
 # Projects

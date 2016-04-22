@@ -1,0 +1,18 @@
+<div class="col-sm-4 center-block portfolio-item">
+    <a href="{{ page.url }}">
+    <div class="hovereffect">
+        {% set image = page.media[page.header.item_image].forceResize(400,280) %}
+        {% if image %}
+        {{ image.html('','','img-responsive') }}
+        {% else %}
+        <img src="http://lorempixel.com/400/280/technics/" class="img-responsive" alt="">
+        {% endif %}
+        <div class="overlay">
+            <h2>{{ page.header.item_heading }}</h2>
+            <p>
+                <i class="fa fa-search-plus fa-2x fa-inverse"></i>
+            </p> 
+        </div>
+    </div>
+    </a>
+</div>

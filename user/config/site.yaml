@@ -5,10 +5,8 @@ author:
 taxonomies:
   - category
   - tag
-metadata:
-  description: 'Krisztian Kurucz. UWaterloo Mechatronics Engineering Class of 2018.'
 summary:
-  enabled: true
+  enabled: false
   format: short
   size: 300
   delimiter: '==='

@@ -1,13 +1,16 @@
 enabled: true
-from: your@email.here
-to: your@email.here
+from: yorkregionopenmic@gmail.com
+from_name: York Region Open Mic Site
+to: kuruczkk@gmail.com
+to_name: Krisztian Kurucz
 mailer:
-  engine: mail
+  engine: smtp
   smtp:
-    server: localhost
-    port: 25
-    encryption: none
-    user: ''
-    password: ''
+    server: smtp.gmail.com
+    port: 465
+    encryption: ssl
+    user: 'yorkregionopenmic@gmail.com'
+    password: 'SupportLiv3Music'
   sendmail:
     bin: '/usr/sbin/sendmail'
+content_type: text/html

@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head profile="http://www.w3.org/2005/10/profile">
+  <head>
     {% block head %}
+      
+      <!-- Metadata -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      {% if header.description %}
-        <meta name="description" content="{{ header.description }}">
-      {% else %}
-        <meta name="description" content="{{ site.description }}">
-      {% endif %}
+      <meta name="description" content="I am Krisztian Kurucz. A student from UWaterloo Mechatronics Engineering in Waterloo, Ontario. Class of 2018.">
+      <meta name="robots" content="index,follow">
       <meta name="author" content="Krisztian Kurucz">
-      {% if header.robots %}
-        <meta name="robots" content="{{ header.robots }}">
-      {% endif %}
+      <meta name="google-site-verification" content="5EarrUjG5tuwXL2XBCisE4Hwmzs0dOeK1cosfs09KYM" />
+          
+      <meta property="og:title" content="{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}">
+      <meta property="og:type" content="public_figure">
+      <meta property="og:url" content="https://www.krisztiankurucz.ca">
+      <meta property="og:image" content="https://www.krisztiankurucz,ca/me.jpg">
+      <meta property="og:site_name" content="Krisztian Kurucz's Personal Site">
+      <meta property="fb:admins" content="1208286763">
+      <meta property="og:description" content="I am Krisztian Kurucz. A student from UWaterloo Mechatronics Engineering in Waterloo, Ontario. Class of 2018.">
+      <meta property="og:latitude" content="43.4638888889">
+      <meta property="og:longitude" content="-80.5258333333">
+      <meta property="og:locality" content="Waterloo">
+      <meta property="og:region" content="Ontario">
+      <meta property="og:country-name" content="Canada">
+      <meta property="og:email" content="contact@krisztiankurucz.ca">
+      <!-- Metadata End -->
+      
+      <!-- Structured Data Begin --> <!--
+      <div itemscope itemtype="http://schema.org/Person">
+        <a itemprop="url" href="www.krisztiankurucz.ca"><div itemprop="name"><strong>Krisztian Kurucz</strong></div></a>
+        <div itemprop="jobtitle">Mechatronics Engineering Student</div>
+        <div itemprop="description">I am Krisztian Kurucz. A student from UWaterloo Mechatronics Engineering in Waterloo, Ontario. Class of 2018.</div>
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <div><span itemprop="addressLocality">Waterloo</span>, <span itemprop="addressRegion">Ontario</span></div><div itemprop="addressCountry">Canada</div>
+        </div>
+        <div itemprop="email">contact@krisztiankurucz.ca</div>
+      </div>
+      <!-- Structured Data End -->
+          
+      <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
+      
       <link rel="icon" type="image/x-icon" href="{{ url('theme://images/favicon.png', true) }}">
       <link rel="canonical" href="{{ page.url(true, true) }}" />
-      <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
-
+      
       {% block stylesheets %}
         {# Bootstrap core CSS #}
         {% do assets.addCss('theme://css/bootstrap.css',102) %}
@@ -31,7 +57,6 @@
       {% block javascripts %}
         {% do assets.add('https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', 101) %}
         {% do assets.add('theme://js/bootstrap.min.js') %}
-        {% do assets.add('theme://js/clean-blog.min.js') %}
 
         {% if browser.getBrowser == 'msie' and browser.getVersion >= 8 and browser.getVersion <= 9 %}
           {% do assets.add('https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js') %}
