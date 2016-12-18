@@ -97,6 +97,10 @@ class DataManagerPlugin extends Plugin
                     $typeName = $type->getFilename();
                     if ($typeName[0] == '.') continue;
 
+                    if (!is_dir(DATA_DIR . $typeName)) {
+                        continue;
+                    }
+
                     $iterator = new \FilesystemIterator(DATA_DIR . $typeName, \FilesystemIterator::SKIP_DOTS);
                     $count = 0;
                     foreach ($iterator as $fileinfo) {
@@ -123,8 +127,12 @@ class DataManagerPlugin extends Plugin
      */
     private function getFileContentFromRoute($type, $fileRoute) {
 
-        //Single item details
-        $fileInstance = File::instance(DATA_DIR . $type . '/' . $fileRoute .  $this->config->get('plugins.data-manager.types.' . $type . '.file_extension', '.txt'));
+        //get .yaml file
+        $fileInstance = File::instance(DATA_DIR . $type . '/' . $fileRoute .  $this->config->get('plugins.data-manager.types.' . $type . '.file_extension', '.yaml'));
+
+        if (!$fileInstance->content()) { //try using .txt if not found
+            $fileInstance = File::instance(DATA_DIR . $type . '/' . $fileRoute .  $this->config->get('plugins.data-manager.types.' . $type . '.file_extension', '.txt'));
+        }
 
         if (!$fileInstance->content()) {
             //Item not found

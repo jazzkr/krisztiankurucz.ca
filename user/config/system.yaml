@@ -63,7 +63,7 @@ pages:
   ignore_hidden: true
   url_taxonomy_filters: true
 cache:
-  enabled: true
+  enabled: false
   check:
     method: file
   driver: auto

@@ -1,4 +1,0 @@
-name: test
-email: a@b.c
-purpose: Musician4OpenMic
-message: asfas

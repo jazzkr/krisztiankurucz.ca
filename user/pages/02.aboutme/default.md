@@ -9,7 +9,7 @@ image: aboutme-bg.jpg
 
 ##  Hi, I'm Krisztian.
 
-Hi, my name is Krisztian Kurucz. I am currently 20 years old, and live in Richmond Hill, Ontario when I'm not off studying at the University of Waterloo.
+Hi, my name is Krisztian Kurucz. I am currently 21 years old, and live in Richmond Hill, Ontario when I'm not off studying at the University of Waterloo.
 
 ![This is one of the better pictures taken of me -- Photo cred: Taylor Goodfield](me.jpg?resize=400,300) {.center}
 <p class="caption" align="center">This is one of the better pictures taken of me -- Photo cred: Taylor Goodfield</p>

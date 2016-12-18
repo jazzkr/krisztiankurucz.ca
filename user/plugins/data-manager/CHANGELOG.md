@@ -1,3 +1,23 @@
+# v1.0.7
+## 10/24/2016
+
+1. [](#improved)
+    * Added Romanian translation
+1. [](#bugfix)
+	* Avoid error if a file is found in the `user/data` folder (fixes `licences.yaml` issue), ignore the file instead
+
+# v1.0.6
+## 07/14/2016
+
+1. [](#improved)
+	* Added danish language
+
+# v1.0.5
+## 04/26/2016
+
+1. [](#bugfix)
+	* Default to use `.yaml` data files extension. Also check for `.txt`
+
 # v1.0.4
 ## 02/18/2016
 

@@ -1,4 +1,0 @@
-name: asfs
-email: g@e.d
-purpose: musician
-message: asdasfasf

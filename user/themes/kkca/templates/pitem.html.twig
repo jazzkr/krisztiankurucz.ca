@@ -12,6 +12,12 @@
 
     {% block content %}
     <div class="backto"><a href="{{ base_url }}"><i class="fa fa-arrow-left"></i><span class="text">Back to all Projects</span></a></div>
+    <h4><div class="tags">
+    {% for tag in page.header.tags %}
+    <span class="label label-default">{{ tag }}</span>
+    {% endfor %}
+    </div></h4>
     {{ content }}
     {% endblock %}
 {% endembed %}
+

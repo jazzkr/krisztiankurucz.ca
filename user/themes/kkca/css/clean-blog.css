@@ -355,7 +355,6 @@ hr.thick {
 .backto {
     font-size: 14px;
     margin-top: 16px;
-    margin-bottom: -8px;
     font-style: oblique;
     font-weight: 600;
     line-height: inherit;
@@ -368,9 +367,18 @@ hr.thick {
 .backto .fa {
     vertical-align: middle;
     font-size: 20px;
+    margin-top: -5px;
 }
 .backto .text {
     padding-left: 10px;
+}
+.tags {
+    padding-top: 10px;
+    margin-bottom: -15px;
+    font-weight: normal;
+}
+.tags .label{
+    font-weight: normal;
 }
 footer {
     padding: 40px 0 30px;
@@ -709,4 +717,202 @@ body {
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
+}
+.pdfobject-container {
+    height: 1000px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.pdfobject {
+    border: 1px solid #666;
+ }
+
+ /*----------------------------------------------*/
+/*  Skill Bars
+/*----------------------------------------------*/
+
+.bars {
+    width: 95%;
+    float: left;
+    padding: 0;
+    text-align: left;
+}
+
+.bars .skills {
+   margin-top: 36px;
+   list-style: none;
+}
+
+.bars li {
+   position: relative;
+   margin-bottom: 60px;
+   background: #ccc;
+   height: 42px;
+   border-radius: 3px;
+}
+
+.bars li em {
+   font: 15px 'opensans-bold', sans-serif;
+   color: #4a386f;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-weight: normal;
+   position: relative;
+   top: -36px;
+}
+
+.bars .heading {
+    font: 18px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    padding-left: 24px;
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+.bar-expand {
+   position: absolute;
+   left: 0;
+   top: 0;
+   margin: 0;
+   padding-right: 24px;
+   background: #4a386f;
+   display: inline-block;
+   height: 42px;
+   line-height: 42px;
+   border-radius: 3px 0 0 3px;
+}
+
+.tenpercent {
+    width: 10%;
+    -moz-animation: tenpercent 2s ease;
+    -webkit-animation: tenpercent 2s ease;
+}
+.twentypercent {
+    width: 20%;
+    -moz-animation: twentypercent 2s ease;
+    -webkit-animation: twentypercent 2s ease;
+}
+.thirtypercent {
+    width: 30%;
+    -moz-animation: thirtypercent 2s ease;
+    -webkit-animation: thirtypercent 2s ease;
+}
+.fourtypercent {
+    width: 40%;
+    -moz-animation: fourtypercent 2s ease;
+    -webkit-animation: fourtypercent 2s ease;
+}
+.fiftypercent {
+    width: 50%;
+    -moz-animation: fiftypercent 2s ease;
+    -webkit-animation: fiftypercent 2s ease;
+}
+.sixtypercent {
+    width: 60%;
+    -moz-animation: sixtypercent 2s ease;
+    -webkit-animation: sixtypercent 2s ease;
+}
+.seventypercent {
+    width: 70%;
+    -moz-animation: seventypercent 2s ease;
+    -webkit-animation: seventypercent 2s ease;
+}
+.eightypercent {
+    width: 80%;
+    -moz-animation: eightypercent 2s ease;
+    -webkit-animation: eightypercent 2s ease;
+}
+.ninetypercent {
+    width: 90%;
+    -moz-animation: ninetypercent 2s ease;
+    -webkit-animation: ninetypercent 2s ease;
+}
+.hundredpercent {
+    width: 98%;
+    -moz-animation: hundredpercent 2s ease;
+    -webkit-animation: hundredpercent 2s ease;
+}
+
+@-moz-keyframes tenpercent {
+  0%   { width: 0px;  }
+  100% { width: 10%;  }
+}
+@-moz-keyframes twentypercent {
+  0%   { width: 0px;  }
+  100% { width: 20%;  }
+}
+@-moz-keyframes thirtypercent {
+  0%   { width: 0px;  }
+  100% { width: 30%;  }
+}
+@-moz-keyframes fourtypercent {
+  0%   { width: 0px;  }
+  100% { width: 40%;  }
+}
+@-moz-keyframes fiftypercent {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
+}
+@-moz-keyframes sixtypercent {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
+}
+@-moz-keyframes seventypercent {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
+@-moz-keyframes eightypercent {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+@-moz-keyframes ninetypercent {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+@-moz-keyframes hundredpercent {
+  0%   { width: 0px;  }
+  100% { width: 98%;  }
+}
+
+@-webkit-keyframes tenpercent {
+  0%   { width: 0px;  }
+  100% { width: 10%;  }
+}
+@-webkit-keyframes twentypercent {
+  0%   { width: 0px;  }
+  100% { width: 20%;  }
+}
+@-webkit-keyframes thirtypercent {
+  0%   { width: 0px;  }
+  100% { width: 30%;  }
+}
+@-webkit-keyframes fourtypercent {
+  0%   { width: 0px;  }
+  100% { width: 40%;  }
+}
+@-webkit-keyframes fiftypercent {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
+}
+@-webkit-keyframes sixtypercent {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
+}
+@-webkit-keyframes seventypercent {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
+@-webkit-keyframes eightypercent {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+@-webkit-keyframes ninetypercent {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+@-webkit-keyframes hundredpercent {
+  0%   { width: 0px;  }
+  100% { width: 98%;  }
 }

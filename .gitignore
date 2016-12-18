@@ -223,6 +223,7 @@ assets/*
 logs/*
 images/*
 user/data/*
+user/accounts/*
 
 # OS Generated
 .DS_Store*
@@ -230,5 +231,3 @@ ehthumbs.db
 Icon?
 Thumbs.db
 *.swp
-user/sites/openmic/plugins/email/email.yaml
-user/sites/openmic/plugins/email/email.yaml
